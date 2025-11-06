@@ -13,10 +13,10 @@ namespace Strict_INN_Validation_with_a_Prefix
 {
     class Program
     {
-        private static IInfoFetcher<IdentityData> infoFetcher = new InfoFetcher();
+        private readonly static IInfoFetcher<IdentityData> infoFetcher = new InfoFetcher();
 
-        private static IFormatter<IdentityData> formatter = FormatterFactory.CreateFormatter();
-        private static IValidator<IdentityData> validator = ValidatorFactory.CreateValidator();
+        private readonly static IFormatter<IdentityData> formatter = FormatterFactory.CreateFormatter();
+        private readonly static IValidator<IdentityData> validator = ValidatorFactory.CreateValidator();
         static void Main(string[] args)
         {
             try
