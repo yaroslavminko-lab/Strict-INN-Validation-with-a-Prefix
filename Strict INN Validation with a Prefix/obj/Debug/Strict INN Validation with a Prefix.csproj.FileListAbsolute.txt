@@ -1,0 +1,7 @@
+D:\Work\SCHArpProjects\Strict INN Validation with a Prefix\Strict INN Validation with a Prefix\bin\Debug\Strict INN Validation with a Prefix.exe.config
+D:\Work\SCHArpProjects\Strict INN Validation with a Prefix\Strict INN Validation with a Prefix\bin\Debug\Strict INN Validation with a Prefix.exe
+D:\Work\SCHArpProjects\Strict INN Validation with a Prefix\Strict INN Validation with a Prefix\bin\Debug\Strict INN Validation with a Prefix.pdb
+D:\Work\SCHArpProjects\Strict INN Validation with a Prefix\Strict INN Validation with a Prefix\obj\Debug\Strict INN Validation with a Prefix.csproj.AssemblyReference.cache
+D:\Work\SCHArpProjects\Strict INN Validation with a Prefix\Strict INN Validation with a Prefix\obj\Debug\Strict INN Validation with a Prefix.csproj.CoreCompileInputs.cache
+D:\Work\SCHArpProjects\Strict INN Validation with a Prefix\Strict INN Validation with a Prefix\obj\Debug\Strict INN Validation with a Prefix.exe
+D:\Work\SCHArpProjects\Strict INN Validation with a Prefix\Strict INN Validation with a Prefix\obj\Debug\Strict INN Validation with a Prefix.pdb

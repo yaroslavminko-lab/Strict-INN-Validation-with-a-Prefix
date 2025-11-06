@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Strict_INN_Validation_with_a_Prefix
 {
-    class Validation
+    internal interface IInfoFetcher<T>
     {
+        T GetData();
     }
 }
