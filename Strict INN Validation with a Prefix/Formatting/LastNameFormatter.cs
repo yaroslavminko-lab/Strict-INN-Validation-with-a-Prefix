@@ -10,14 +10,8 @@ namespace Strict_INN_Validation_with_a_Prefix.Formatting
 {
     class LastNameFormatter : IFormatter<string>
     {
-        public void Format(ref string lastName)
+        public void Format(string lastName)
         {
-            if (string.IsNullOrWhiteSpace(lastName))
-            {
-                lastName = string.Empty;
-                return;
-            }
-
             lastName = (char.ToUpper(lastName.Trim()[0]) + lastName.Trim().Substring(1).ToLower()).Trim();
         }
     }

@@ -15,9 +15,9 @@ namespace Strict_INN_Validation_with_a_Prefix.Validatting
         {
             this._taxIDValidator = taxIDValidator;
         }
-        public void Validate(ref IdentityData data)
+        public void Validate(IdentityData data)
         {
-            this._taxIDValidator.Validate(ref data.TaxID);
+            this._taxIDValidator.Validate(data.TaxID);
         }
     }
 }

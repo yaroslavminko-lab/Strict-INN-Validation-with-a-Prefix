@@ -11,13 +11,12 @@ namespace Strict_INN_Validation_with_a_Prefix.Validatting
     class TaxIDValidator : IValidator<string>
     {
         const string pattern = @"^RU\d{10}$";
-        public void Validate(ref string data)
+        public void Validate(string data)
         {
             if (Regex.IsMatch(data.ToUpper(), pattern) || data.Length != 12)
             {
                 data = string.Empty;
             }
         }
-
     }
 }

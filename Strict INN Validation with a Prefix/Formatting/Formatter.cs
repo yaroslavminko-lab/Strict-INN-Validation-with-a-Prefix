@@ -17,10 +17,10 @@ namespace Strict_INN_Validation_with_a_Prefix.Formatting
             this._firstNameFormatter = firstNameFormatter;
             this._lastNameFormatter = lastNameFormatter;
         }
-        public void Format(ref IdentityData data)
+        public void Format(IdentityData data)
         {
-            _firstNameFormatter.Format(ref data.FirstName);
-            _lastNameFormatter.Format(ref data.LastName);
+            _firstNameFormatter.Format(data.FirstName);
+            _lastNameFormatter.Format(data.LastName);
         }
     }
 }

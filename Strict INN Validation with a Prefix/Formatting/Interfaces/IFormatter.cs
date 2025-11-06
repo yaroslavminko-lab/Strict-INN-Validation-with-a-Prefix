@@ -8,6 +8,6 @@ namespace Strict_INN_Validation_with_a_Prefix.Formatting.Interfaces
 {
     public interface IFormatter<T>
     {
-        void Format(ref T data);
+        void Format(T data);
     }
 }

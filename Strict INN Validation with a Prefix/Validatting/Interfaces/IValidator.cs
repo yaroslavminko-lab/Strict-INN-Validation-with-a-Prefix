@@ -8,6 +8,6 @@ namespace Strict_INN_Validation_with_a_Prefix.Validatting.Interfaces
 {
     internal interface IValidator<T>
     {
-        void Validate(ref T data);
+        void Validate(T data);
     }
 }

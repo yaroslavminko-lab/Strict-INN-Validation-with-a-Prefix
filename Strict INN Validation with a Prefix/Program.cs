@@ -23,8 +23,8 @@ namespace Strict_INN_Validation_with_a_Prefix
             {
                 var data = infoFetcher.GetData();
 
-                formatter.Format(ref data);
-                validator.Validate(ref data);
+                formatter.Format(data);
+                validator.Validate(data);
 
                 Console.WriteLine(data.ToString());
                 Console.ReadKey();
