@@ -26,13 +26,10 @@ namespace Strict_INN_Validation_with_a_Prefix
         }
         public string LastName {
             get => _lastName;
-            set
-            {
-                if (string.IsNullOrEmpty(value))
-                    _lastName = string.Empty;
-                else
-                    _lastName = (char.ToUpper(value.Trim()[0]) + value.Trim().Substring(1).ToLower()).Trim();
-            }
+            set => _lastName = string.IsNullOrEmpty(value)
+                ? string.Empty;
+                : (char.ToUpper(value.Trim()[0]) + value.Trim().Substring(1).ToLower()).Trim();
+
         }
         public string TaxID
         {
