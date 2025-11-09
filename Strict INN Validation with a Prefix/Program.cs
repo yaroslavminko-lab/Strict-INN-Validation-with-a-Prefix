@@ -3,10 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Strict_INN_Validation_with_a_Prefix.Formatting;
-using Strict_INN_Validation_with_a_Prefix.Formatting.Interfaces;
-using Strict_INN_Validation_with_a_Prefix.Validatting;
-using Strict_INN_Validation_with_a_Prefix.Validatting.Interfaces;
 
 
 namespace Strict_INN_Validation_with_a_Prefix
@@ -15,16 +11,11 @@ namespace Strict_INN_Validation_with_a_Prefix
     {
         private readonly static IInfoFetcher<IdentityData> infoFetcher = new InfoFetcher();
 
-        private readonly static IFormatter<IdentityData> formatter = FormatterFactory.CreateFormatter();
-        private readonly static IValidator<IdentityData> validator = ValidatorFactory.CreateValidator();
         static void Main(string[] args)
         {
             try
             {
-                var data = infoFetcher.GetData();
-
-                formatter.Format(data);
-                validator.Validate(data);
+                var data = infoFetcher.GetData();;
 
                 Console.WriteLine(data.ToString());
                 Console.ReadKey();
